@@ -123,7 +123,13 @@
             This page is last updated on :
             <script type="text/javascript">
                 function lastModified() {
-                    document.write(document.lastModified);
+                    var lastModDate = new Date(document.lastModified);
+                    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                    // var formattedDate = days[lastModDate.getDay()] + ', ' + months[lastModDate.getMonth()] + ' ' + lastModDate.getDate() + ', ' + lastModDate.getFullYear();
+                    var formattedDate = months[lastModDate.getMonth()] + ' ' + lastModDate.getDate() + ', ' + lastModDate.getFullYear();
+
+                    document.write(formattedDate);
                 }
                 lastModified()
             </script>
