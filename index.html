@@ -116,11 +116,11 @@
                         href="mailto:1605066@ugrad.cse.buet.ac.bd">1605066@ugrad.cse.buet.ac.bd</a>
                 </h4>
 
-                <div class="buttons pt-3">
+                <!-- <div class="buttons pt-3">
 
                     <button class="btn btn-dark rounded">DOWNLOAD CV</button>
 
-                </div>
+                </div> -->
 
 
                 <div class="socials mt-4">
@@ -137,9 +137,12 @@
                 </div>
             </div>
             <div class="img-holder">
-                <img src="assets/imgs/shovito.jpg" alt="Shovito">
+                <img src="assets/imgs/shovito.jpg" alt="Shovito" class="img-thumbnail mb-4">
+
             </div>
+
         </div>
+
 
         <!-- Header-widget -->
         <!-- <div class="widget">
@@ -161,6 +164,24 @@
     <!-- End of Page Header -->
 
     <!-- About section -->
+    <div class="mobile-only">
+        <img src="assets/imgs/shovito-mobile.jpg" alt="Shovito" class="img-thumbnail">
+        <style>
+            /* CSS code to show .mobile-only div only in mobile view */
+            @media only screen and (max-width: 767px) {
+                .mobile-only {
+                    display: block;
+                }
+            }
+
+            /* CSS code to hide .mobile-only div in desktop view */
+            @media only screen and (min-width: 768px) {
+                .mobile-only {
+                    display: none;
+                }
+            }
+        </style>
+    </div>
     <section class="section mt-8">
 
         <div class="container mt-8">
@@ -170,6 +191,10 @@
                 <div class="col-md-3">
 
                     <img src="assets/imgs/shovito2.jpg" alt="shovito" class="img-thumbnail mb-4">
+
+
+
+
 
                 </div>
 

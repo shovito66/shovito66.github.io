@@ -670,6 +670,19 @@ pre code {
   margin-left: auto;
 }
 
+/* @media only screen and (max-width: 767px) {
+  .mobile-only {
+      display: block;
+  }
+}
+
+/* CSS code to hide .mobile-only div in desktop view */
+@media only screen and (min-width: 768px) {
+  .mobile-only {
+      display: none;
+  }
+} */
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
