@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Personal Web Page of Shovito Barua Soumma.">
+    <meta name="description" content="Shovito Barua Soumma is a first year PhD student in CS.">
     <meta name="author" content="Shovito Barua Soumma">
     <!--favicon-->
     <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
@@ -258,10 +258,18 @@
             This page is last updated on :
             <script type="text/javascript">
                 function lastModified() {
-                    document.write(document.lastModified);
+                    var lastModDate = new Date(document.lastModified);
+                    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                    // var formattedDate = days[lastModDate.getDay()] + ', ' + months[lastModDate.getMonth()] + ' ' + lastModDate.getDate() + ', ' + lastModDate.getFullYear();
+                    var formattedDate = months[lastModDate.getMonth()] + ' ' + lastModDate.getDate() + ', ' + lastModDate.getFullYear();
+
+                    document.write(formattedDate);
                 }
-                lastModified()
+                lastModified();
             </script>
+
+
         </p>
     </section>
 
